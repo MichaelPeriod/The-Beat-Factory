@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class Translucent : MonoBehaviour, ISelection
 {
-    public Tile currentTile;
+    public TileBase currentTile;
 
     public void OnSelect(Vector2 pos)
     {

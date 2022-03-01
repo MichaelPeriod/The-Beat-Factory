@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e6f3fbb560bd6041a202ea918fa4f23, type: 3}
-  m_Name: Conveyor 1
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: Microphone 1
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 21300000, guid: fb6d7e39fe66268458db78b6ed02ae7b, type: 3}
-  m_DefaultGameObject: {fileID: 2628526618649170208, guid: e4d4799663df1cc42bc46d88099a0389, type: 3}
+  m_DefaultSprite: {fileID: 21300000, guid: 713f19f834fe8974586e48224c89f207, type: 3}
+  m_DefaultGameObject: {fileID: 9215471762695861828, guid: 1c8dd523c8002cb44891d8f0844b58a5, type: 3}
   m_DefaultColliderType: 0
   m_TilingRules: []
