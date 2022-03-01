@@ -2090,3 +2090,4 @@ Received Import Request.
   path: Assets/Tiles/Metronome/Metronome 1.asset
   artifactKey: Guid(f3648980326242d44b284116310beda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Tiles/Metronome/Metronome 1.asset using Guid(f3648980326242d44b284116310beda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdad888f2ae6ec67872e5048530bc5fd') in 0.040208 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
