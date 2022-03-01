@@ -19,8 +19,6 @@ public class HandleMouseInputs : MonoBehaviour
     {
         mousePos = ctx.ReadValue<Vector2>();
         mouseToWorldPos = GetComponent<Camera>().ScreenToWorldPoint(mousePos);
-        
-        Debug.Log(mouseToWorldPos);
     }
 
     public void onMouseClick(InputAction.CallbackContext ctx)

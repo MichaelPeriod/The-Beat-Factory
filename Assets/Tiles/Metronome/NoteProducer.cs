@@ -23,7 +23,9 @@ public class NoteProducer : MonoBehaviour
 
         if(currentTime - lastSpawnTime >= noteFrequency)
         {
-            Instantiate(notePrefab, new Vector3(1f, -0.5f, 0f), Quaternion.identity);
+            GameObject note = Instantiate(notePrefab, transform);
+            note.transform.position += new Vector3(.5f, -.25f, 0f);
+            note.transform.parent = null;
             lastSpawnTime = currentTime;
         }
     }
