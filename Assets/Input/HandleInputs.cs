@@ -29,6 +29,12 @@ public class HandleInputs : MonoBehaviour
             selectionScript.OnSelect(mouseToWorldPos);
     }
 
+    public void onMouseRight(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+            selectionScript.OnCollect(mouseToWorldPos);
+    }
+
     public void onRotate(InputAction.CallbackContext ctx){
         if (ctx.started)
             selectionScript.OnRotate(1);

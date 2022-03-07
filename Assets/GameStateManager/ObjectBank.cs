@@ -10,6 +10,8 @@ public class ObjectBank : MonoBehaviour
     public GameObject objectTiles;
     public GameObject priviewTiles;
 
+    public GameObject mainCamera;
+
     private void Start()
     {
         current = this;

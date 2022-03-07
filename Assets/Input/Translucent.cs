@@ -11,6 +11,12 @@ public class Translucent : MonoBehaviour, ISelection
 
     Vector3Int lastTileLoc;
 
+    public void ChangeTile(TileVariants tileToChangeTo)
+    {
+        currentRotation = 0;
+        currentTiles = tileToChangeTo;
+    }
+
     public void OnSelect(Vector2 pos)
     {
         Tilemap detailMap = ObjectBank.current.objectTiles.GetComponent<Tilemap>();
@@ -23,8 +29,6 @@ public class Translucent : MonoBehaviour, ISelection
 
     public void OnHover(Vector2 pos)
     {
-        if(!isValidSpot(pos)) return;
-
         Tilemap previewMap = ObjectBank.current.priviewTiles.GetComponent<Tilemap>();
 
         Vector3Int cellLocation = previewMap.WorldToCell(pos);
@@ -33,6 +37,8 @@ public class Translucent : MonoBehaviour, ISelection
             previewMap.SetTile(lastTileLoc, default(TileBase));
             lastTileLoc = cellLocation;
         }
+
+        if(!isValidSpot(pos)) return;
 
         previewMap.SetTile(cellLocation, currentTiles.rotatedTiles[currentRotation]);
     }
