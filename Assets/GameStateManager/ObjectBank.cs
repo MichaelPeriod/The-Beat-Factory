@@ -8,6 +8,7 @@ public class ObjectBank : MonoBehaviour
 
     public GameObject groundTiles;
     public GameObject objectTiles;
+    public GameObject priviewTiles;
 
     private void Start()
     {
