@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ConveyorFollower : MonoBehaviour
 {
+    public float noteSpeed = 3f;
     private Rigidbody2D rb;
     public float ConveyorProximity = 0.05f;
 
@@ -21,7 +22,7 @@ public class ConveyorFollower : MonoBehaviour
         {
             if(hit.collider.gameObject.TryGetComponent(out NotePusher np))
             {
-                rb.velocity = np.tileDirection;
+                rb.velocity = np.tileDirection * noteSpeed;
                 break;
             }
         }

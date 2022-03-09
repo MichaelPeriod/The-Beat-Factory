@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc121f918897994ea95e452a62fabfc, type: 3}
   m_Name: Conveyor
   m_EditorClassIdentifier: 
+  icon: {fileID: 6803873404882588446, guid: fb6d7e39fe66268458db78b6ed02ae7b, type: 3}
   rotatedTiles:
   - {fileID: 11400000, guid: 9785c2ea74f9efd4293c00b563bd4f5e, type: 2}
   - {fileID: 11400000, guid: e312793dd8601f743bc319856034a9fd, type: 2}

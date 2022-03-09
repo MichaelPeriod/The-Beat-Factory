@@ -14,7 +14,7 @@ public class FillItemsOptions : MonoBehaviour
         {
             GameObject instanciatedSlot = Instantiate(itemSlot, Vector3.down * (i * 200) + transform.position, Quaternion.identity, transform);
 
-
+            instanciatedSlot.GetComponent<FillItemFeilds>().illItemFeilds(itemsGiven[i]);
         }
     }
 }

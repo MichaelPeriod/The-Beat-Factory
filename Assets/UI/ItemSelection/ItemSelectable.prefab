@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7213914786520582527}
   - component: {fileID: 7213914786520582526}
   - component: {fileID: 7213914786520582525}
+  - component: {fileID: -1448189529399285658}
   m_Layer: 5
   m_Name: ItemSelectable
   m_TagString: Untagged
@@ -148,6 +149,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldTile: {fileID: 11400000, guid: 6ceef9dc11ee7e748be84697e01a87e4, type: 2}
+--- !u!114 &-1448189529399285658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213914786520582400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efecc3de99621643a78df3f7bb65088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: {fileID: 7213914787070980992}
+  itemImage: {fileID: 7213914787859950299}
+  selection: {fileID: 7213914786520582525}
 --- !u!1 &7213914787070980994
 GameObject:
   m_ObjectHideFlags: 0

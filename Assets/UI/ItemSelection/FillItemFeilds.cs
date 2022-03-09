@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class FillItemFeilds : MonoBehaviour
 {
     public TextMeshProUGUI itemName;
-    public Sprite itemImage;
+    public Image itemImage;
+    public ItemSelection selection;
 
     public void illItemFeilds(TileVariants tile)
     {
         itemName.text = tile.name;
-        //itemImage = tile.rotatedTiles[0].GetTileData;
+        itemImage.sprite = tile.icon;
+        selection.heldTile = tile;
     }
 }

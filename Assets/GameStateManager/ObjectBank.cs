@@ -12,6 +12,8 @@ public class ObjectBank : MonoBehaviour
 
     public GameObject mainCamera;
 
+    public BarManager currentSongBar;
+
     private void Start()
     {
         current = this;

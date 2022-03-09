@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2590176200030858318}
   - component: {fileID: 2590176200030858319}
   - component: {fileID: 2590176200030858304}
+  - component: {fileID: -6828654459248619229}
   m_Layer: 0
   m_Name: Note
   m_TagString: Note
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConveyorProximity: 0.05
+--- !u!114 &-6828654459248619229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590176200030858307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e3998cd5a323a4bbb54637d152ba3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteType: {fileID: 11400000, guid: fe96683858076a0458a287253ee4ba1e, type: 2}
