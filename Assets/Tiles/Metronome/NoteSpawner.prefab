@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6313e833aa5ab19418687a579e8bf73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteFrequency: 0.25
+  noteFrequency: 0.5
   notePrefab: {fileID: 2590176200030858307, guid: 717ae51a2cd225c4fa30905157045a9d, type: 3}

@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584f5c044413e7b49837823e89cbcd8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteSpeed: 2
   ConveyorProximity: 0.05
 --- !u!114 &-6828654459248619229
 MonoBehaviour:

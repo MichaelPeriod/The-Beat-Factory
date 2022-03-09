@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ObjectBank : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class ObjectBank : MonoBehaviour
     public GameObject mainCamera;
 
     public BarManager currentSongBar;
+
+    public UnityEvent onPlay;
 
     private void Start()
     {
