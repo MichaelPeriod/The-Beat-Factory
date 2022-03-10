@@ -12,7 +12,7 @@ public class FillItemsOptions : MonoBehaviour
     {
         for (int i = 0; i < itemsGiven.Count; i++)
         {
-            GameObject instanciatedSlot = Instantiate(itemSlot, Vector3.down * (i * 200) + transform.position, Quaternion.identity, transform);
+            GameObject instanciatedSlot = Instantiate(itemSlot, Vector3.down * (1.25f * i * itemSlot.GetComponent<RectTransform>().sizeDelta.y) + transform.position, Quaternion.identity, transform);
 
             instanciatedSlot.GetComponent<FillItemFeilds>().illItemFeilds(itemsGiven[i]);
         }

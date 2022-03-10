@@ -13,11 +13,12 @@ public class ObjectBank : MonoBehaviour
 
     public GameObject mainCamera;
 
+    public GameObject canvas;
     public BarManager currentSongBar;
 
     public UnityEvent onPlay;
 
-    private void Start()
+    private void Awake()
     {
         current = this;
     }

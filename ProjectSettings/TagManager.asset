@@ -7,6 +7,7 @@ TagManager:
   - GroundTiles
   - ObjectTiles
   - Note
+  - Canvas
   layers:
   - Default
   - TransparentFX
