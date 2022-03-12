@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6579799549486069522}
   - component: {fileID: 467000253157295009}
   m_Layer: 0
-  m_Name: NoteSplitter
+  m_Name: NoteSplitterDR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

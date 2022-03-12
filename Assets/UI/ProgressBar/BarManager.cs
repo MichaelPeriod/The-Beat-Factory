@@ -9,6 +9,8 @@ public class BarManager : MonoBehaviour
     private float curentSongLength = 0f;
 
     public GameObject noteBase;
+    public GameObject upPitchedNoteBase;
+    public GameObject downPitchedNoteBase;
 
     private float canvasScale = 1f;
 
@@ -25,7 +27,15 @@ public class BarManager : MonoBehaviour
         curentSongLength += note.lengthInSeconds;
         if(curentSongLength > barLengthInSeconds) return;
 
-        GameObject instanciatedNote = Instantiate(noteBase, transform);
+        GameObject instanciatedNote;
+        
+        if(note.currentPitch == 1)
+            instanciatedNote = Instantiate(upPitchedNoteBase, transform);
+        else if(note.currentPitch == -1)
+            instanciatedNote = Instantiate(downPitchedNoteBase, transform);
+        else
+            instanciatedNote = Instantiate(noteBase, transform);
+        
         RectTransform noteRect = instanciatedNote.GetComponent<RectTransform>();
         Image noteImg = instanciatedNote.GetComponent<Image>();
         RectTransform barRect = GetComponent<RectTransform>();
@@ -40,14 +50,18 @@ public class BarManager : MonoBehaviour
 
         if(targetNotes != null && curentSongLength >= barLengthInSeconds)
             compareNotes();
-
-        Debug.Log("Update system to use NoteInfo instead of note info");
         
         //Do music here
     }
 
-    void compareNotes(){
-        //Add comparison
+    private void compareNotes(){
+        for(int i = 0; i < notes.Count; i++){
+            if(notes[i] != targetNotes.notes[i]){
+                //Handle fail
+                return;
+            }
+        }
+
         SceneManagement.current.TransitionSuccess();
     }
 }

@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TuneUp DR
       objectReference: {fileID: 0}
+    - target: {fileID: 2628526618649170211, guid: e4d4799663df1cc42bc46d88099a0389, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2628526618649170213, guid: e4d4799663df1cc42bc46d88099a0389, type: 3}
       propertyPath: m_RootOrder
       value: 0

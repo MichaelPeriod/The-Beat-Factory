@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dc121f918897994ea95e452a62fabfc, type: 3}
-  m_Name: Splitter
+  m_Name: Tune Up
   m_EditorClassIdentifier: 
-  icon: {fileID: -373811808706879068, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+  icon: {fileID: 21300000, guid: 476f8ad52a5003c4191d8311eedf6441, type: 3}
   rotatedTiles:
-  - {fileID: 11400000, guid: 29131239d42dba74d958c92a4c0712a3, type: 2}
-  - {fileID: 11400000, guid: 2a62fd85a167a504f8c01cd444091f63, type: 2}
-  - {fileID: 11400000, guid: e7e6566f342505c4a9d8e4dcf475c27b, type: 2}
-  - {fileID: 11400000, guid: c22c9c82ab0b43a4fa3f3e7c579c4d9f, type: 2}
+  - {fileID: 11400000, guid: 9d154ae1baca9cd42a4466a26c999a82, type: 2}

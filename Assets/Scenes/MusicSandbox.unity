@@ -339,25 +339,25 @@ Tilemap:
     m_Data:
       e00: -2.5244127e-29
       e01: 0
-      e02: 3.2135316e+17
-      e03: 3.2135316e+17
-      e10: 7.71e-43
+      e02: 3.4950848e+27
+      e03: 3.4950848e+27
+      e10: 7.05e-43
       e11: 0
-      e12: 2.94e-43
-      e13: 2.94e-43
+      e12: 1.47e-43
+      e13: 1.47e-43
       e20: 6.33667
-      e21: 2.6190577e-29
-      e22: 8.963412e-10
-      e23: 2.6190577e-29
+      e21: 8.38985e-40
+      e22: 9.365673e-10
+      e23: 8.38985e-40
       e30: 4.5904e-41
-      e31: 7.74e-43
-      e32: 7.71e-43
-      e33: 7.74e-43
+      e31: 7.08e-43
+      e32: 7.05e-43
+      e33: 7.08e-43
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: 3.213977e+17, g: 3.213977e+17, b: 3.213977e+17, a: 3.213977e+17}
   - m_RefCount: 0
-    m_Data: {r: 2.6190577e-29, g: 2.6190577e-29, b: 2.6190577e-29, a: 2.6190577e-29}
+    m_Data: {r: 8.38985e-40, g: 8.38985e-40, b: 8.38985e-40, a: 8.38985e-40}
   m_TileObjectToInstantiateArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -624,6 +624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barLengthInSeconds: 3
   noteBase: {fileID: 2742107561108368785, guid: 236b8212d073c804ab83d1f86e79a942, type: 3}
+  upPitchedNoteBase: {fileID: 0}
+  downPitchedNoteBase: {fileID: 0}
   notes: []
   targetNotes: {fileID: 0}
 --- !u!114 &433143458
@@ -1263,6 +1265,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2daf9bcfab158aa47a3e454bbe109223, type: 2}
   - {fileID: 11400000, guid: d0627cdec0081074fb00dce84bcae72a, type: 2}
   - {fileID: 11400000, guid: 7b98213ce7a2ed84a867b9e12bd19516, type: 2}
+  - {fileID: 11400000, guid: 4f4816ea149122841837af540d639a81, type: 2}
 --- !u!1 &846825698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barLengthInSeconds: 3
   noteBase: {fileID: 2742107561108368785, guid: 236b8212d073c804ab83d1f86e79a942, type: 3}
+  upPitchedNoteBase: {fileID: 1553727134116477027, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}
+  downPitchedNoteBase: {fileID: 5763228626082580924, guid: 54e06453ad04ef54da03b650fc3971d6, type: 3}
   notes: []
   targetNotes: {fileID: 433143460}
 --- !u!1 &1016283524
@@ -1366,6 +1371,7 @@ GameObject:
   - component: {fileID: 1016283526}
   - component: {fileID: 1016283525}
   - component: {fileID: 1016283527}
+  - component: {fileID: 1016283528}
   m_Layer: 0
   m_Name: GSM
   m_TagString: Untagged
@@ -1421,6 +1427,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   success: {fileID: 1355936004}
+--- !u!114 &1016283528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016283524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fcafd0ff5cdc543b97a61f1949db5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: []
 --- !u!1 &1150796619
 GameObject:
   m_ObjectHideFlags: 0
