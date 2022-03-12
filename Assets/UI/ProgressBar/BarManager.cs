@@ -41,10 +41,13 @@ public class BarManager : MonoBehaviour
         if(targetNotes != null && curentSongLength >= barLengthInSeconds)
             compareNotes();
 
+        Debug.Log("Update system to use NoteInfo instead of note info");
+        
         //Do music here
     }
 
     void compareNotes(){
+        //Add comparison
         SceneManagement.current.TransitionSuccess();
     }
 }

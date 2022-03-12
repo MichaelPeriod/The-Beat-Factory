@@ -8,4 +8,5 @@ public class NoteInfo : ScriptableObject
 {
     public float lengthInSeconds;
     public Color32 colorRepresentation;
+    public int currentPitch = 0;
 }
