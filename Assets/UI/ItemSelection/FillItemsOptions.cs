@@ -8,11 +8,16 @@ public class FillItemsOptions : MonoBehaviour
 
     public List<TileVariants> itemsGiven;
 
+    public float itemSpacing = 1.05f;
+    public int gridWidth = 3;
     private void OnEnable()
     {
         for (int i = 0; i < itemsGiven.Count; i++)
         {
-            GameObject instanciatedSlot = Instantiate(itemSlot, Vector3.down * (1.25f * i * itemSlot.GetComponent<RectTransform>().sizeDelta.y) + transform.position, Quaternion.identity, transform);
+            float xPos = (i % gridWidth) * itemSpacing * itemSlot.GetComponent<RectTransform>().sizeDelta.x;
+            float yPos = Mathf.Floor(i / gridWidth) * itemSpacing * itemSlot.GetComponent<RectTransform>().sizeDelta.y;
+
+            GameObject instanciatedSlot = Instantiate(itemSlot, Vector3.down * yPos + Vector3.right * xPos + transform.position, Quaternion.identity, transform);
 
             instanciatedSlot.GetComponent<FillItemFeilds>().illItemFeilds(itemsGiven[i]);
         }

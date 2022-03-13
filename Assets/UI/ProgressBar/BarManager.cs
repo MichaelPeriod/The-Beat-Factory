@@ -57,7 +57,7 @@ public class BarManager : MonoBehaviour
     private void compareNotes(){
         for(int i = 0; i < notes.Count; i++){
             if(notes[i] != targetNotes.notes[i]){
-                //Handle fail
+                SceneManagement.current.TransitionFail();
                 return;
             }
         }

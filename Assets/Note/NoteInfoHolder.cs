@@ -8,8 +8,13 @@ public class NoteInfoHolder : MonoBehaviour
 
     public float lengthInSeconds;
     public int pitch;
-    private void Start()
+    public void OnStart(NoteInfo _noteType, Vector3 position) //Called from noteproducer
     {
+        noteType = _noteType;
+
+        transform.position = position;
+        transform.parent = null;
+
         GetComponent<SpriteRenderer>().color = noteType.colorRepresentation; 
     
         lengthInSeconds = noteType.lengthInSeconds;

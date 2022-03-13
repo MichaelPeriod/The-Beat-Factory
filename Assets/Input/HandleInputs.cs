@@ -17,26 +17,36 @@ public class HandleInputs : MonoBehaviour
 
     public void onMouseMove(InputAction.CallbackContext ctx)
     {
-        mousePos = ctx.ReadValue<Vector2>();
-        mouseToWorldPos = GetComponent<Camera>().ScreenToWorldPoint(mousePos);
+        if(SceneManagement.current.isPlaying){
+            mousePos = ctx.ReadValue<Vector2>();
+            mouseToWorldPos = GetComponent<Camera>().ScreenToWorldPoint(mousePos);
 
-        selectionScript.OnHover(mouseToWorldPos);
+            selectionScript.OnHover(mouseToWorldPos);
+        }
     }
 
     public void onMouseClick(InputAction.CallbackContext ctx)
     {
-        if (ctx.started)
-            selectionScript.OnSelect(mouseToWorldPos);
+        if(SceneManagement.current.isPlaying)
+            if (ctx.started)
+                selectionScript.OnSelect(mouseToWorldPos);
     }
 
     public void onMouseRight(InputAction.CallbackContext ctx)
     {
-        if (ctx.started)
-            selectionScript.OnCollect(mouseToWorldPos);
+        if(SceneManagement.current.isPlaying)
+            if (ctx.started)
+                selectionScript.OnCollect(mouseToWorldPos);
     }
 
     public void onRotate(InputAction.CallbackContext ctx){
-        if (ctx.started)
-            selectionScript.OnRotate(1);
+        if(SceneManagement.current.isPlaying)
+            if (ctx.started)
+                selectionScript.OnRotate(1);
+    }
+
+    public void onEscape(InputAction.CallbackContext ctx){
+        if(ctx.started)
+            SceneManagement.current.TogglePause();
     }
 }
