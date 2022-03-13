@@ -93,7 +93,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1553727134116477027, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}
       propertyPath: m_Name
-      value: DownPiched Note
+      value: DownPiched Note Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610948002724520430, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}
+      propertyPath: m_text
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9118390457016924872, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}
       propertyPath: m_Color.b
@@ -107,5 +111,6 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9137255
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3303980743484263376, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e93135aeeb3cad244b0fb9490c98fa3b, type: 3}

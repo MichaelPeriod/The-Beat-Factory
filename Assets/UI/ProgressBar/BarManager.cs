@@ -29,9 +29,9 @@ public class BarManager : MonoBehaviour
 
         GameObject instanciatedNote;
         
-        if(note.currentPitch == 1)
+        if(note.currentPitch >= 1)
             instanciatedNote = Instantiate(upPitchedNoteBase, transform);
-        else if(note.currentPitch == -1)
+        else if(note.currentPitch <= -1)
             instanciatedNote = Instantiate(downPitchedNoteBase, transform);
         else
             instanciatedNote = Instantiate(noteBase, transform);
@@ -46,6 +46,9 @@ public class BarManager : MonoBehaviour
         noteRect.position = canvasScale * new Vector2(barStart.x - noteWidth / 2 + curentSongLength / barLengthInSeconds * barRect.sizeDelta.x, barRect.position.y);
         noteImg.color = note.colorRepresentation;
         
+        if(instanciatedNote.TryGetComponent(out FillMusicOffset mOff))
+            mOff.setOffset(note.currentPitch);
+
         notes.Add(note);
 
         if(targetNotes != null && curentSongLength >= barLengthInSeconds)
