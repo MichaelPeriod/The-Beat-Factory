@@ -13,7 +13,7 @@ public class NoteProducer : MonoBehaviour
     private float lastSpawnTime;
     private float currentTime;
 
-    private bool isPlaying = false;
+    public bool isPlaying = false;
 
     private Vector2[] spawnablePositions = {new Vector2(.5f, .25f), new Vector2(-.5f, .25f), new Vector2(-.5f, -.25f), new Vector2(.5f, -.25f)};
 

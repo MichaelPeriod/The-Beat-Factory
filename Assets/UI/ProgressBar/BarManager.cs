@@ -40,6 +40,7 @@ public class BarManager : MonoBehaviour
         Image noteImg = instanciatedNote.GetComponent<Image>();
         RectTransform barRect = GetComponent<RectTransform>();
 
+        //Bar start is coming up with difrent numbers based on screen size -- needs to start at the same position
         Vector2 barStart = new Vector2(barRect.position.x, barRect.position.y) - (barRect.sizeDelta.x / 2f * Vector2.right);
         float noteWidth = note.lengthInSeconds / barLengthInSeconds * barRect.sizeDelta.x;
         noteRect.sizeDelta = new Vector2(noteWidth, barRect.sizeDelta.y);
