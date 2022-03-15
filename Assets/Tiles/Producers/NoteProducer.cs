@@ -23,6 +23,7 @@ public class NoteProducer : MonoBehaviour
             ObjectBank.current.onPlay = new UnityEvent();
 
         ObjectBank.current.onPlay.AddListener(onStart);
+        ObjectBank.current.onStop.AddListener(onStop);
     }
 
     private void onStart()
@@ -31,6 +32,11 @@ public class NoteProducer : MonoBehaviour
         lastSpawnTime = currentTime;
 
         isPlaying = true;
+    }
+
+    private void onStop()
+    {
+        isPlaying = false;
     }
 
     private void FixedUpdate()

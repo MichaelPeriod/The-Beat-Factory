@@ -8,19 +8,25 @@ public class StartMusic : MonoBehaviour
     private bool isMusicStarted = false;
 
     [SerializeField] private Sprite stopButton;
+    [SerializeField] private Sprite playButton;
 
     public void OnSelect()
     {
         if(!isMusicStarted){
             ObjectBank.current.onPlay.Invoke();
-            ChangeInterface();
+            ChangeInterface(true);
             isMusicStarted = true;
         } else {
-            SceneManagement.current.RestartLevel();
+            ChangeInterface(false);
+            isMusicStarted = false;
+            ObjectBank.current.onStop.Invoke();
         }
     }
 
-    public void ChangeInterface(){
-        GetComponent<Image>().sprite = stopButton;
+    public void ChangeInterface(bool toStop){
+        if (toStop)
+            GetComponent<Image>().sprite = stopButton;
+        else
+            GetComponent<Image>().sprite = playButton;
     }
 }

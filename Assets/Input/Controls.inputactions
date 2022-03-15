@@ -82,6 +82,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9257a44e-20bc-429c-89ff-e69947a02b90",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KBM",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f6feccbd-9316-4151-af88-4708bf151489",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",

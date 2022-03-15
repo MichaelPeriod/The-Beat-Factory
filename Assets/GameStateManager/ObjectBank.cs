@@ -16,7 +16,10 @@ public class ObjectBank : MonoBehaviour
     public GameObject canvas;
     public BarManager currentSongBar;
 
+    public GameObject noteHolder;
+
     public UnityEvent onPlay;
+    public UnityEvent onStop;
 
     private void Awake()
     {

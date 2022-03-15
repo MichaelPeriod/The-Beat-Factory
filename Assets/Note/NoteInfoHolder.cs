@@ -11,7 +11,7 @@ public class NoteInfoHolder : MonoBehaviour
         noteType = _noteType;
 
         transform.position = position;
-        transform.parent = null;
+        transform.parent = ObjectBank.current.noteHolder.transform;
 
         GetComponent<SpriteRenderer>().color = noteType.colorRepresentation; 
     }
