@@ -54,8 +54,9 @@ public class BarManager : MonoBehaviour
 
         if(targetNotes != null && curentSongLength >= barLengthInSeconds)
             compareNotes();
-        
-        //Do music here
+
+        if(targetNotes != null)
+            AudioManager.current.playAudio(note.noteSound);
     }
 
     private void compareNotes(){

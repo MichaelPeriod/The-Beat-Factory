@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: noteType
       value: 
       objectReference: {fileID: 11400000, guid: b987dab449d4ea64b9d35e7826a40a1d, type: 2}
+    - target: {fileID: 5951039726885987215, guid: 90a7baf6e2c50e247a3b00d798a17394, type: 3}
+      propertyPath: noteFrequency
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90a7baf6e2c50e247a3b00d798a17394, type: 3}

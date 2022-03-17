@@ -9,4 +9,5 @@ public class NoteInfo : ScriptableObject
     public float lengthInSeconds;
     public Color32 colorRepresentation;
     public int currentPitch = 0;
+    public AudioClip noteSound;
 }
