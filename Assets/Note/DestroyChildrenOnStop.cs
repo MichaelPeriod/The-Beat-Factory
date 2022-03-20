@@ -7,6 +7,7 @@ public class DestroyChildrenOnStop : MonoBehaviour
     private void Start()
     {
         ObjectBank.current.onStop.AddListener(DestroyChildren);
+        ObjectBank.current.onPlay.AddListener(DestroyChildren);
     }
 
     public void DestroyChildren()

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1112039760981879138}
   - component: {fileID: 1112039760981879140}
-  - component: {fileID: 4441996873545501044}
+  - component: {fileID: -5348251678313282394}
   m_Layer: 0
-  m_Name: NoteContractor DR
+  m_Name: NoteContractor DR&UL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -61,7 +61,7 @@ PolygonCollider2D:
       - {x: 0.5, y: 0}
       - {x: 0, y: -0.25}
       - {x: -0.5, y: 0}
---- !u!114 &4441996873545501044
+--- !u!114 &-5348251678313282394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +70,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112039760981879143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1428962c2fba5469ad6a6d59f62b6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 80726d2e20458de4cb20efc56e2b73c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileDirection: {x: 0.5, y: -0.25}
+  notePrefab: {fileID: 2590176200030858307, guid: 717ae51a2cd225c4fa30905157045a9d, type: 3}
+  relitiveOutputPositions:
+  - {x: 0.5, y: 0.25}
+  - {x: -0.5, y: -0.25}

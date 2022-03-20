@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc121f918897994ea95e452a62fabfc, type: 3}
   m_Name: Contractor
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 2c571b4801f1b294ebf8becce2fcbb39, type: 3}
+  icon: {fileID: 787935400755277559, guid: 2c571b4801f1b294ebf8becce2fcbb39, type: 3}
   rotatedTiles:
   - {fileID: 11400000, guid: f9dcb951ad702184282ec9698c9d004a, type: 2}
+  - {fileID: 11400000, guid: af1214b39e2b59940897be6e8b8d0ccf, type: 2}

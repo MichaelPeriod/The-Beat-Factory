@@ -19,6 +19,9 @@ public class BarManager : MonoBehaviour
     public SetGoal targetNotes;
 
     public void Start(){
+        ObjectBank.current.onStop.AddListener(clearBarOnStop);
+        ObjectBank.current.onPlay.AddListener(clearBarOnStop);
+
         canvasScale = ObjectBank.current.canvas.GetComponent<CanvasScaler>().scaleFactor;
     }
 
@@ -57,6 +60,13 @@ public class BarManager : MonoBehaviour
 
         if(targetNotes != null)
             AudioManager.current.playAudio(note.noteSound);
+    }
+
+    public void clearBarOnStop(){
+        if(targetNotes == null) return; //Do not clear target notes on stop
+
+        curentSongLength = 0f;
+        notes.Clear();
     }
 
     private void compareNotes(){

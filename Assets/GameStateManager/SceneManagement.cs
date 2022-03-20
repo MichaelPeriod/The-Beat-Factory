@@ -64,7 +64,6 @@ public class SceneManagement : MonoBehaviour
     }
 
     public void Quit(){
-        Application.Quit();
-        Debug.Log("Game has been closed");
+        SceneManager.LoadScene(0);
     }
 }

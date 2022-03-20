@@ -16,10 +16,15 @@ public class HandleInputs : MonoBehaviour
     {
         selectionScript = GetComponent<ISelection>();
         ObjectBank.current.onPlay.AddListener(onSongPlay);
+        ObjectBank.current.onStop.AddListener(onSongPause);
     }
 
     public void onSongPlay(){
         canPlace = false;
+    }
+
+    public void onSongPause(){
+        canPlace = true;
     }
 
     public void onMouseMove(InputAction.CallbackContext ctx)

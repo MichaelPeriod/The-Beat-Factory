@@ -56,7 +56,7 @@ public class NoteProducer : MonoBehaviour
         Tilemap detailMap = ObjectBank.current.objectTiles.GetComponent<Tilemap>();
         foreach(Vector2 testPos in spawnablePositions){
             foreach(RaycastHit2D hit in Physics2D.CircleCastAll((Vector2) transform.position + testPos, 0.2f, Vector2.zero)){
-                if(hit.collider.gameObject.GetComponent<NotePusher>()){
+                if(hit.collider.gameObject.TryGetComponent(out INoteable notePlacement)){
                     GameObject note = Instantiate(notePrefab, transform);
                     note.GetComponent<NoteInfoHolder>().OnStart(noteType, note.transform.position + (Vector3) testPos);
                     lastSpawnTime = currentTime;

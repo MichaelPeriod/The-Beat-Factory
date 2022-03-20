@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteReciever : MonoBehaviour
+public class NoteReciever : MonoBehaviour, INoteable
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
