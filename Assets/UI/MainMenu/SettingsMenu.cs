@@ -10,13 +10,9 @@ public class SettingsMenu : MonoBehaviour
     void Start(){
         if(PlayerPrefs.GetFloat("Volume") == default(float))
             PlayerPrefs.SetFloat("Volume", .5f);
-
-        //Add volume test snipit
-        Debug.Log("CHECK HERE");
     }
 
     public void setNewVolume(){
-        Debug.Log(volumeSlider.value);
         PlayerPrefs.SetFloat("Volume", volumeSlider.value);
     }
 }

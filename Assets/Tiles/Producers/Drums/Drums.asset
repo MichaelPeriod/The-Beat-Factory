@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f3fbb560bd6041a202ea918fa4f23, type: 3}
+  m_Name: Drums
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: 21300000, guid: a88aff22f15fe174d9a013d2ba6ff6dd, type: 3}
+  m_DefaultGameObject: {fileID: 3011692315139408205, guid: d5f31622dd5b3ed48bb3c8d438d20f33, type: 3}
+  m_DefaultColliderType: 1
+  m_TilingRules: []

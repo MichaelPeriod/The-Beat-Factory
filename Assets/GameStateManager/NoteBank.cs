@@ -7,7 +7,7 @@ public class NoteBank : MonoBehaviour
     public static NoteBank current;
 
     [SerializeField] List<NoteInfo> notes = new List<NoteInfo>();
-
+    [SerializeField] List<Sprite> visuals = new List<Sprite>();
 
     void Awake(){
         current = this;
@@ -49,4 +49,12 @@ public class NoteBank : MonoBehaviour
         return currentNote;
     }
 
+    public Sprite returnNoteVisual(float noteLength)
+    {
+        if (noteLength <= 0.125f)
+            return visuals[0]; //Eighth note
+        //Deal with other note types
+
+        return visuals[1]; //Quarter note is default
+    }
 }

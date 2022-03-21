@@ -232,6 +232,8 @@ GameObject:
   m_Component:
   - component: {fileID: 141233230}
   - component: {fileID: 141233231}
+  - component: {fileID: 141233233}
+  - component: {fileID: 141233232}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -324,6 +326,143 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 141233232}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: set_volume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!82 &141233232
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141233229}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 575e2611606fd004cb74cb96c9847b60, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &141233233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141233229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 141233232}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &152273286
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,9 +558,9 @@ MonoBehaviour:
   m_AnimationTriggers:
     m_NormalTrigger: Unselected
     m_HighlightedTrigger: Hovered
-    m_PressedTrigger: 
-    m_SelectedTrigger: 
-    m_DisabledTrigger: 
+    m_PressedTrigger: Nothing
+    m_SelectedTrigger: Nothing
+    m_DisabledTrigger: Nothing
   m_Interactable: 1
   m_TargetGraphic: {fileID: 152273290}
   m_OnClick:
@@ -489,7 +628,7 @@ GameObject:
   - component: {fileID: 210753393}
   - component: {fileID: 210753392}
   m_Layer: 5
-  m_Name: Conveyor (1)
+  m_Name: Microphone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 713f19f834fe8974586e48224c89f207, type: 3}
+  m_Sprite: {fileID: 5359009009255126524, guid: 713f19f834fe8974586e48224c89f207, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -697,6 +836,7 @@ GameObject:
   - component: {fileID: 335560299}
   - component: {fileID: 335560301}
   - component: {fileID: 335560300}
+  - component: {fileID: 335560302}
   m_Layer: 0
   m_Name: Details
   m_TagString: Untagged
@@ -780,7 +920,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 3
@@ -830,7 +970,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 0
@@ -890,7 +1030,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 3
@@ -915,14 +1055,14 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7fa106207570cdb468c156dfdd4e17af, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 5330464476701405424, guid: 476f8ad52a5003c4191d8311eedf6441, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1732287868377070896, guid: fb6d7e39fe66268458db78b6ed02ae7b, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -4025644675222363007, guid: fb6d7e39fe66268458db78b6ed02ae7b, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: 21300000, guid: 713f19f834fe8974586e48224c89f207, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 5330464476701405424, guid: 476f8ad52a5003c4191d8311eedf6441, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -7715361123700659640, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
   - m_RefCount: 1
@@ -931,6 +1071,8 @@ Tilemap:
     m_Data: {fileID: 6027523223127536178, guid: fb6d7e39fe66268458db78b6ed02ae7b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 170e5a1d5154db64f9ccd5a524c2d546, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: 5359009009255126524, guid: 713f19f834fe8974586e48224c89f207, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 12
     m_Data:
@@ -993,6 +1135,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &335560302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335560298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab09ffce5e5547f408c1f7307a7ea65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &358137609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howToPlayMenu: {fileID: 117265434}
   settingsMenu: {fileID: 938730646}
+  volumeSlider: {fileID: 141233231}
 --- !u!4 &512317845
 Transform:
   m_ObjectHideFlags: 0
@@ -1622,7 +1777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d23666fc4919bdc46a95ae4de3cbc1d4, type: 3}
+  m_Sprite: {fileID: -4841720520028814253, guid: d23666fc4919bdc46a95ae4de3cbc1d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2479,9 +2634,9 @@ MonoBehaviour:
   m_AnimationTriggers:
     m_NormalTrigger: Unselected
     m_HighlightedTrigger: Hovered
-    m_PressedTrigger: 
-    m_SelectedTrigger: 
-    m_DisabledTrigger: 
+    m_PressedTrigger: Nothing
+    m_SelectedTrigger: Nothing
+    m_DisabledTrigger: Nothing
   m_Interactable: 1
   m_TargetGraphic: {fileID: 816090928}
   m_OnClick:
@@ -2952,9 +3107,9 @@ MonoBehaviour:
   m_AnimationTriggers:
     m_NormalTrigger: Unselected
     m_HighlightedTrigger: Hovered
-    m_PressedTrigger: 
-    m_SelectedTrigger: 
-    m_DisabledTrigger: 
+    m_PressedTrigger: Nothing
+    m_SelectedTrigger: Nothing
+    m_DisabledTrigger: Nothing
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1028379038}
   m_OnClick:
@@ -3608,9 +3763,9 @@ MonoBehaviour:
   m_AnimationTriggers:
     m_NormalTrigger: Unselected
     m_HighlightedTrigger: Hovered
-    m_PressedTrigger: 
-    m_SelectedTrigger: 
-    m_DisabledTrigger: 
+    m_PressedTrigger: Nothing
+    m_SelectedTrigger: Nothing
+    m_DisabledTrigger: Nothing
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1457923459}
   m_OnClick:
