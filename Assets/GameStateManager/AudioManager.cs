@@ -12,6 +12,10 @@ public class AudioManager : MonoBehaviour
         current = this;
     }
 
+    private void Start(){
+        musicPlayer.volume = PlayerPrefs.GetFloat("Volume");
+    }
+
     private void OnEnable()
     {
         if(musicPlayer == default(AudioSource))

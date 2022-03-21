@@ -2465,6 +2465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GSM
       objectReference: {fileID: 0}
+    - target: {fileID: 1526805975124855172, guid: bc92cd3b0dce32f459a7d0b07d0f8ed4, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc92cd3b0dce32f459a7d0b07d0f8ed4, type: 3}
 --- !u!1001 &4596942031817052382
