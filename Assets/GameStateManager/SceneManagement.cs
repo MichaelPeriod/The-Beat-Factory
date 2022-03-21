@@ -41,6 +41,10 @@ public class SceneManagement : MonoBehaviour
         RestartLevel();
     }
 
+    public void resetLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void RestartLevel(){
         ObjectBank.current.onStop.Invoke();
     }
