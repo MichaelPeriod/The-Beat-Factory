@@ -16,7 +16,7 @@ public class NoteBank : MonoBehaviour
     public NoteInfo findHigherPitch(NoteInfo currentNote){
         for(int i = 0; i < notes.Count - 1; i++){
             if(notes[i] == currentNote){
-                if(notes[i].colorRepresentation.Equals(notes[i + 1].colorRepresentation)) //Of the same family
+                if(notes[i].lengthInSeconds == notes[i + 1].lengthInSeconds && notes[i].colorRepresentation.Equals(notes[i + 1].colorRepresentation)) //Of the same family
                     return notes[i + 1];
             }
         }
@@ -27,7 +27,7 @@ public class NoteBank : MonoBehaviour
     public NoteInfo findLowerPitch(NoteInfo currentNote){
         for(int i = 1; i < notes.Count; i++){
             if(notes[i] == currentNote){
-                if(notes[i].colorRepresentation.Equals(notes[i - 1].colorRepresentation))
+                if(notes[i].lengthInSeconds == notes[i - 1].lengthInSeconds && notes[i].colorRepresentation.Equals(notes[i - 1].colorRepresentation))
                     return notes[i - 1];
             }
         }

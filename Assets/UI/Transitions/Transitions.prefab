@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 7423645078100178070}
   - component: {fileID: 7423645078100178071}
   - component: {fileID: 7423645078100178068}
+  - component: {fileID: 5248802937640243236}
   m_Layer: 5
   m_Name: TransitionFail
   m_TagString: Untagged
@@ -363,6 +364,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &5248802937640243236
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7423645078100178069}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7423645078120731232
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +468,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0
+  m_fontSize: 227.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

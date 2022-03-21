@@ -19,12 +19,12 @@ public class SceneManagement : MonoBehaviour
 
     public void TransitionSuccess(){
         success.SetTrigger("TransitionScene");
-        StartCoroutine(delayNextLevel(1.5f));
+        StartCoroutine(delayNextLevel(1.15f));
     }
 
     public void TransitionFail(){
         fail.SetTrigger("TransitionScene");
-        StartCoroutine(delayRestart(1.2f));
+        StartCoroutine(delayRestart(1f));
     }
 
     public IEnumerator delayNextLevel(float time){
@@ -42,7 +42,7 @@ public class SceneManagement : MonoBehaviour
     }
 
     public void RestartLevel(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ObjectBank.current.onStop.Invoke();
     }
 
     public void TogglePause(){

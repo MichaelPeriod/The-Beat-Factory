@@ -10,6 +10,17 @@ public class StartMusic : MonoBehaviour
     [SerializeField] private Sprite stopButton;
     [SerializeField] private Sprite playButton;
 
+    private void Start()
+    {
+        ObjectBank.current.onStop.AddListener(stopMusic);
+    }
+
+    public void stopMusic()
+    {
+        ChangeInterface(false);
+        isMusicStarted = false;
+    }
+
     public void OnSelect()
     {
         if(!isMusicStarted){
@@ -17,8 +28,6 @@ public class StartMusic : MonoBehaviour
             ChangeInterface(true);
             isMusicStarted = true;
         } else {
-            ChangeInterface(false);
-            isMusicStarted = false;
             ObjectBank.current.onStop.Invoke();
         }
     }
