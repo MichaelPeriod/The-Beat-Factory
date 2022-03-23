@@ -17,3 +17,4 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4281019309
   currentPitch: 0
+  noteSound: {fileID: 8300000, guid: 3a540900eff112b488ac736856eee3c4, type: 3}

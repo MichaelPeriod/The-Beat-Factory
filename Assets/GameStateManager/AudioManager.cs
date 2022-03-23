@@ -5,7 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager current;
-    public AudioSource musicPlayer;
+    public GameObject musicPlayer;
+    private float volume;
 
     private void Awake()
     {
@@ -13,19 +14,15 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start(){
-        musicPlayer.volume = PlayerPrefs.GetFloat("Volume");
-    }
-
-    private void OnEnable()
-    {
-        if(musicPlayer == default(AudioSource))
-            musicPlayer = GetComponent<AudioSource>();
+        volume = PlayerPrefs.GetFloat("Volume");
     }
 
     public void playAudio(AudioClip note)
     {
-        musicPlayer.Stop();
-        musicPlayer.clip = note;
-        musicPlayer.Play();
+        AudioSource source = musicPlayer.AddComponent<AudioSource>();
+        source.volume = volume;
+        source.clip = note;
+        source.Play();
+        Destroy(source, note.length);
     }
 }
