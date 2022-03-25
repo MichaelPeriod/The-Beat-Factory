@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 343be061c116c2d4b8591dd229eed408, type: 3}
-  m_Name: DrumNoteBase
+  m_Name: HighHatNote
   m_EditorClassIdentifier: 
   lengthInSeconds: 0.25
   colorRepresentation:
     serializedVersion: 2
-    rgba: 4284845150
+    rgba: 4284134071
   currentPitch: 0
-  noteSound: {fileID: 8300000, guid: b5088ceca6777f242b31667487d5681f, type: 3}
+  noteSound: {fileID: 8300000, guid: b81184edaa3a9ad4e882944dca983aa3, type: 3}

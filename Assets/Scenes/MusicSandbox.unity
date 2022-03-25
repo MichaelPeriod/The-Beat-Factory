@@ -935,12 +935,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 626e64b3f609d084d893d74015380a78, type: 2}
   - {fileID: 11400000, guid: 981aba65912c30448a4fdacab311cc2b, type: 2}
   - {fileID: 11400000, guid: 00b75ae96b5cd3649a01cc3ee76bcaf8, type: 2}
+  - {fileID: 11400000, guid: 91e21aad8f156bc47b621e69daba53b0, type: 2}
+  - {fileID: 11400000, guid: d0627cdec0081074fb00dce84bcae72a, type: 2}
   - {fileID: 11400000, guid: 6ceef9dc11ee7e748be84697e01a87e4, type: 2}
   - {fileID: 11400000, guid: 4f4816ea149122841837af540d639a81, type: 2}
   - {fileID: 11400000, guid: dd8cd5574b28e5a4cbc388a106b42567, type: 2}
   - {fileID: 11400000, guid: 7b98213ce7a2ed84a867b9e12bd19516, type: 2}
   - {fileID: 11400000, guid: e2791732307fe4c4896f55daa43a0611, type: 2}
-  - {fileID: 11400000, guid: d0627cdec0081074fb00dce84bcae72a, type: 2}
   itemSpacing: 1.1
   gridWidth: 3
 --- !u!1 &624203299
@@ -2130,38 +2131,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1076904548}
     m_Modifications:
+    - target: {fileID: 4596942031557668570, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
+      propertyPath: barLengthInSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 0275308537a4a5d4da287adb108e7e33, type: 2}
+      objectReference: {fileID: 11400000, guid: 188ac04d67f54c74bb8e2b5dcf117dea, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 89297f1cb63a8d84ea2ab811d54310b3, type: 2}
+      objectReference: {fileID: 11400000, guid: 95974969dc2513d4ba21c66b342965b0, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 89297f1cb63a8d84ea2ab811d54310b3, type: 2}
+      objectReference: {fileID: 11400000, guid: aa3ac5e3b4882894c976d67b1a0ff829, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 0275308537a4a5d4da287adb108e7e33, type: 2}
+      objectReference: {fileID: 11400000, guid: 95974969dc2513d4ba21c66b342965b0, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 89297f1cb63a8d84ea2ab811d54310b3, type: 2}
+      objectReference: {fileID: 11400000, guid: 188ac04d67f54c74bb8e2b5dcf117dea, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 5b84bcd0d9de30c438f04faa73fe2ea8, type: 2}
+      objectReference: {fileID: 11400000, guid: 95974969dc2513d4ba21c66b342965b0, type: 2}
     - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: notes.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 5b84bcd0d9de30c438f04faa73fe2ea8, type: 2}
+      objectReference: {fileID: 11400000, guid: aa3ac5e3b4882894c976d67b1a0ff829, type: 2}
+    - target: {fileID: 4596942031557668573, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
+      propertyPath: notes.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 95974969dc2513d4ba21c66b342965b0, type: 2}
+    - target: {fileID: 4596942033094175922, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
+      propertyPath: barLengthInSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4596942033472964294, guid: 12c566bebb3032f49b2025b5f100f24b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

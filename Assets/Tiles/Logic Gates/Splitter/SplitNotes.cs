@@ -14,7 +14,6 @@ public class SplitNotes : MonoBehaviour, INoteable
     private List<IEnumerator> activeCoroutines = new List<IEnumerator>();
 
     void Start(){
-        Debug.Log("RETURN");
         //Need to work on dynamic splitter then drum level using https://www.musicca.com/drum-machine?data=%226.0.1-4.2.1-5.4.1-4.6.1-6.8.1-4.10.1-5.12.1-4.14.1-m.-t.4-tmp.120-s.0%22
         ObjectBank.current.onStop.AddListener(cancelOnStop);
 
@@ -39,9 +38,9 @@ public class SplitNotes : MonoBehaviour, INoteable
 
         if(queuedOutputs.Count > 0){
             Vector2 nextPos = queuedOutputs.Dequeue();
+            queuedOutputs.Enqueue(nextPos);
             obj.transform.position = (Vector3) nextPos + transform.position;
             updateSprite(queuedOutputs.Peek());
-            queuedOutputs.Enqueue(nextPos);
         } else {
             updateSprite(Vector2.zero);
         }
