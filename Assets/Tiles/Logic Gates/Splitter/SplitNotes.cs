@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SplitNotes : MonoBehaviour, INoteable
 {
-    private bool hasValidNoteLocations = false;
-
     public List<Vector2> relitiveOutputPositions;
     private Queue<Vector2> queuedOutputs = new Queue<Vector2>();
 

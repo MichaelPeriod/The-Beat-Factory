@@ -20,6 +20,7 @@ public class ObjectBank : MonoBehaviour
 
     public UnityEvent onPlay;
     public UnityEvent onStop;
+    public UnityEvent selectedNewItem;
 
     private void Awake()
     {
