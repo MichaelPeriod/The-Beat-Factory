@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 467000253157295009, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4083670147771065985, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+      objectReference: {fileID: -373811808706879068, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
     - target: {fileID: 4854630908821116835, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -76,17 +76,25 @@ PrefabInstance:
       value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
+      propertyPath: Sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: Sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 4083670147771065985, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+      objectReference: {fileID: -373811808706879068, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
     - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: Sprites.Array.data[1]
       value: 
-      objectReference: {fileID: -1726410201951603300, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+      objectReference: {fileID: -7715361123700659640, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
     - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: Sprites.Array.data[2]
       value: 
-      objectReference: {fileID: -373811808706879068, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+      objectReference: {fileID: -4798722815589947177, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+    - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
+      propertyPath: Sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 627108688954095364, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
     - target: {fileID: 6579799549486069522, guid: fc3154ec2bbe19a4fa30a4da97234329, type: 3}
       propertyPath: relitiveOutputPositions.Array.data[0].y
       value: -0.25

@@ -38,6 +38,18 @@ TextureImporter:
   - first:
       213: 627108688954095364
     second: Splitter_11
+  - first:
+      213: -5097373829312925046
+    second: Splitter_12
+  - first:
+      213: 3702272587290070102
+    second: Splitter_13
+  - first:
+      213: -454486849983687158
+    second: Splitter_14
+  - first:
+      213: 5658565736326944818
+    second: Splitter_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -217,8 +229,8 @@ TextureImporter:
       name: Splitter_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -238,7 +250,7 @@ TextureImporter:
       name: Splitter_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -259,7 +271,7 @@ TextureImporter:
       name: Splitter_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -280,8 +292,8 @@ TextureImporter:
       name: Splitter_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -301,8 +313,8 @@ TextureImporter:
       name: Splitter_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -322,7 +334,7 @@ TextureImporter:
       name: Splitter_8
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -343,8 +355,8 @@ TextureImporter:
       name: Splitter_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -364,8 +376,8 @@ TextureImporter:
       name: Splitter_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -385,8 +397,8 @@ TextureImporter:
       name: Splitter_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -398,6 +410,90 @@ TextureImporter:
       bones: []
       spriteID: 4077ba0b700f3b800800000000000000
       internalID: 627108688954095364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splitter_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a823e60628d7249b0800000000000000
+      internalID: -5097373829312925046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splitter_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c471b7d4d116330800000000000000
+      internalID: 3702272587290070102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splitter_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06d2af2e9651b9f0800000000000000
+      internalID: -454486849983687158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splitter_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238d6fb8e83478e40800000000000000
+      internalID: 5658565736326944818
       vertices: []
       indices: 
       edges: []

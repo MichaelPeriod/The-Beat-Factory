@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc121f918897994ea95e452a62fabfc, type: 3}
   m_Name: Splitter
   m_EditorClassIdentifier: 
-  icon: {fileID: -7715361123700659640, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+  icon: {fileID: -5097373829312925046, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
   rotatedTiles:
   - {fileID: 11400000, guid: 29131239d42dba74d958c92a4c0712a3, type: 2}
   - {fileID: 11400000, guid: 2a62fd85a167a504f8c01cd444091f63, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6f3fbb560bd6041a202ea918fa4f23, type: 3}
   m_Name: SplitterDL
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 4083670147771065985, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+  m_DefaultSprite: {fileID: -373811808706879068, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
   m_DefaultGameObject: {fileID: 815731545963865980, guid: d19c3b1750e902a4ab1b9603e238747e, type: 3}
   m_DefaultColliderType: 1
   m_TilingRules: []

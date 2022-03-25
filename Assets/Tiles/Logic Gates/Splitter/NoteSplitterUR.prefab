@@ -28,6 +28,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8745730462994704711, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
     - target: {fileID: 7265492984316140554, guid: 8d044dffc067e1644981f9c40d659e54, type: 3}
+      propertyPath: Sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -6578314653391140764, guid: 14be4a3e87fb61546b946a48e1b7b35f, type: 3}
+    - target: {fileID: 7265492984316140554, guid: 8d044dffc067e1644981f9c40d659e54, type: 3}
       propertyPath: relitiveOutputPositions.Array.data[0].y
       value: 0.25
       objectReference: {fileID: 0}

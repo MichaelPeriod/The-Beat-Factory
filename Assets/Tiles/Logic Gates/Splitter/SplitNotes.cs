@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class SplitNotes : MonoBehaviour, INoteable
 {
+    private bool hasValidNoteLocations = false;
+
     public List<Vector2> relitiveOutputPositions;
-    private int notesPassed = 0;
+    private Queue<Vector2> queuedOutputs = new Queue<Vector2>();
 
     public List<Sprite> Sprites;
 
     private List<IEnumerator> activeCoroutines = new List<IEnumerator>();
 
     void Start(){
+        Debug.Log("RETURN");
+        //Need to work on dynamic splitter then drum level using https://www.musicca.com/drum-machine?data=%226.0.1-4.2.1-5.4.1-4.6.1-6.8.1-4.10.1-5.12.1-4.14.1-m.-t.4-tmp.120-s.0%22
         ObjectBank.current.onStop.AddListener(cancelOnStop);
+
+        ObjectBank.current.onPlay.AddListener(setStack);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -20,8 +26,10 @@ public class SplitNotes : MonoBehaviour, INoteable
         if(col.gameObject.TryGetComponent(out NoteInfoHolder noteInfo))
         {
             col.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            activeCoroutines.Add(handleNote(col.gameObject, noteInfo));
-            StartCoroutine(activeCoroutines[activeCoroutines.Count - 1]);
+            if(queuedOutputs.Count > 0){
+                activeCoroutines.Add(handleNote(col.gameObject, noteInfo));
+                StartCoroutine(activeCoroutines[activeCoroutines.Count - 1]);
+            }
         }
     }
 
@@ -29,20 +37,32 @@ public class SplitNotes : MonoBehaviour, INoteable
     {
         yield return new WaitForSeconds(.25f);
 
-        obj.transform.position = (Vector3) relitiveOutputPositions[notesPassed % relitiveOutputPositions.Count] + transform.position;
-
-        notesPassed++;
-
-        updateSprite();
+        if(queuedOutputs.Count > 0){
+            Vector2 nextPos = queuedOutputs.Dequeue();
+            obj.transform.position = (Vector3) nextPos + transform.position;
+            updateSprite(queuedOutputs.Peek());
+            queuedOutputs.Enqueue(nextPos);
+        } else {
+            updateSprite(Vector2.zero);
+        }
 
         obj.GetComponent<SpriteRenderer>().enabled = true;
 
         activeCoroutines.RemoveAt(0); // clear self after stop
     }
 
-    private void updateSprite()
+    private void updateSprite(Vector2 currDir)
     {
-        GetComponent<SpriteRenderer>().sprite = Sprites[notesPassed % Sprites.Count];
+        if(currDir == Vector2.zero){
+            GetComponent<SpriteRenderer>().sprite = Sprites[Sprites.Count - 1];
+        } else {
+            for(int i = 0; i < relitiveOutputPositions.Count; i++){
+                if(relitiveOutputPositions[i] == currDir){
+                    GetComponent<SpriteRenderer>().sprite = Sprites[i];
+                    break;
+                }
+            }
+        }
     }
 
     public void cancelOnStop(){
@@ -50,7 +70,33 @@ public class SplitNotes : MonoBehaviour, INoteable
             StopCoroutine(coroutine);
         }
 
-        notesPassed = 0;
-        updateSprite();
+        updateSprite(Vector2.zero);
+    }
+
+    public void setStack(){
+        queuedOutputs.Clear();
+
+        foreach(Vector2 currDir in relitiveOutputPositions){
+            if(checkIfSpotIsValid((Vector2) transform.position + currDir)){
+                queuedOutputs.Enqueue(currDir);
+            }
+        }
+
+        if(queuedOutputs.Count > 0)
+            updateSprite(queuedOutputs.Peek());
+        else
+            updateSprite(Vector2.zero);
+    }
+
+    private bool checkIfSpotIsValid(Vector2 checkingPos){
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(checkingPos, 0.2f, Vector2.zero);
+
+        foreach(RaycastHit2D hit in hits){
+            if(hit.collider.gameObject.TryGetComponent(out INoteable noteHolder)){
+                return true;
+            }
+        }
+
+        return false;
     }
 }
